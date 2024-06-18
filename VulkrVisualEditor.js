@@ -12,8 +12,6 @@
 
 (function() {
     'use strict';
-    alert("executed");
-    console.log("executed");
 
     //functions for local usage
     function roundNumber(num) {
@@ -43,7 +41,7 @@
         guiContainer.style.zIndex = '10000';
         guiContainer.style.width = '400px';
         guiContainer.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
-        guiContainer.style.display = 'none'; // Initially hidden
+        guiContainer.style.display = 'block'; // Initially hidden
         guiContainer.style.borderRadius = '10px'; // Rounded corners
 
         // Add the minimize button
