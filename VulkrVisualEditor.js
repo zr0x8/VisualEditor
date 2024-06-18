@@ -4,7 +4,7 @@
 // @version         v1.1
 // @description     visually changes your test result
 // @author          0x8
-// @match           *.azota.vn/*
+// @match           https://azota.vn/*
 // @grant           none
 // @downloadURL https://update.greasyfork.org/scripts/498243/Vulkr%20Visual%20Editor.user.js
 // @updateURL https://update.greasyfork.org/scripts/498243/Vulkr%20Visual%20Editor.meta.js
