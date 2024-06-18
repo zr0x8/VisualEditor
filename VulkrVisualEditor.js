@@ -22,9 +22,9 @@
     // Define CSS variables for GUI colors
     var root = document.documentElement;
     root.style.setProperty('--gui-background-color', '#fff'); // Default background color
-    root.style.setProperty('--gui-text-color', 'darkred'); // Default text color
-    root.style.setProperty('--gui-border-color', 'black'); // Default border color
-    root.style.setProperty('--gui-input-border-color', 'blue'); // Input border color
+    root.style.setProperty('--gui-text-color', 'black'); // Default text color
+    root.style.setProperty('--gui-border-color', 'purple'); // Default border color
+    root.style.setProperty('--gui-input-border-color', 'red'); // Input border color
 
     // Wait for the DOM to be fully loaded
     window.addEventListener('load', function() {
@@ -32,16 +32,17 @@
         var guiContainer = document.createElement('div');
         guiContainer.id = 'vulkyr-visual-editor';
         guiContainer.style.position = 'fixed';
-        guiContainer.style.top = '50px';
-        guiContainer.style.left = '50px';
+        guiContainer.style.top = '10%';
+        guiContainer.style.left = '5%';
         guiContainer.style.padding = '20px';
         guiContainer.style.backgroundColor = 'var(--gui-background-color)';
         guiContainer.style.color = 'var(--gui-text-color)'; // Text color
         guiContainer.style.border = '2px solid var(--gui-border-color)';
         guiContainer.style.zIndex = '10000';
-        guiContainer.style.width = '400px';
+        guiContainer.style.width = '90%';
+        guiContainer.style.maxWidth = '400px';
         guiContainer.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
-        guiContainer.style.display = 'block'; // Initially hidden
+        guiContainer.style.display = 'none'; // Initially hidden
         guiContainer.style.borderRadius = '10px'; // Rounded corners
 
         // Add the minimize button
@@ -65,13 +66,13 @@
         // Add the title
         var title = document.createElement('h2');
         title.textContent = 'Vulkr Visual Editor';
-        title.style.color = 'var(--gui-text-color)';
+        title.style.color = 'red';
         guiContainer.appendChild(title);
 
         var subtitle = document.createElement('span');
         subtitle.textContent = 'by 0x8';
         subtitle.style.fontSize = 'smaller';
-        subtitle.style.color = 'var(--gui-text-color)';
+        subtitle.style.color = 'red';
         guiContainer.appendChild(subtitle);
 
         // Add a horizontal rule
@@ -126,9 +127,9 @@
         editButton.style.marginTop = '20px';
         editButton.style.padding = '10px 20px';
         editButton.style.border = '2px solid var(--gui-text-color)';
-        editButton.style.backgroundColor = 'gray';
+        editButton.style.backgroundColor = 'white';
         editButton.style.cursor = 'pointer';
-        editButton.style.borderRadius = '20px'; // Rounded button
+        editButton.style.borderRadius = '10px'; // Rounded button
         editButton.onclick = function() {
             // Get input values
             var timeElapsed = timeField.input.value.toString();
