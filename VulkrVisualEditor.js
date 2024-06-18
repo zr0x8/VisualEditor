@@ -1,16 +1,20 @@
 // ==UserScript==
 // @name            Vulkr Visual Editor
 // @namespace       github.com/zr0x8
-// @version         v1.0
+// @version         v1.1
 // @description     visually changes your test result
 // @author          0x8
 // @match           *.azota.vn/*
 // @grant           none
+// @downloadURL https://update.greasyfork.org/scripts/498243/Vulkr%20Visual%20Editor.user.js
+// @updateURL https://update.greasyfork.org/scripts/498243/Vulkr%20Visual%20Editor.meta.js
 // ==/UserScript==
 
 (function() {
     'use strict';
     alert("executed");
+    console.log("executed");
+
     //functions for local usage
     function roundNumber(num) {
         return Math.round((num + Number.EPSILON) * 100) / 100;
